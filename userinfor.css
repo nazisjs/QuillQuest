@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    box-shadow: 2px 5px 12px 0px #f0efef;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    box-shadow: 2px 5px 30px 4px #e9e9e9;
+}
+
+.logo {
+    height: auto;
+    width: 90px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.nav-links a.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #588157;
+    transition: width .3s;
+    position: absolute;
+    bottom: 12;
+    margin-left: 20px;
+}
+
+.nav-links a.line:hover::after {
+    width: 100%;
+}
+
+button.reg {
+    margin-left: 70px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #588157;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button.reg a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.fa-user,
+.fa-shopping-cart {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    color: #588157;
+}
+
+a.love {
+    list-style-type: none;
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.profile {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-info {
+    text-align: left;
+    color: #333;
+}
+
+.text-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.all {
+    margin-top: 20px;
+}
+
+.btns {
+    background-color: #13682e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fa-bars::before {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fa-bars::before {
+        display: flex;
+        justify-content: space-around;
+        color: #0e4622;
+        cursor: pointer;
+        font-size: 23px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul.nav-links li,
+    .reg,
+    .userlink {
+        padding: 20px;
+    }
+
+    nav ul.nav-links a {
+        padding: 15px;
+    }
+
+    a.love {
+        display: none;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fa-bars {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 300px;
+    }
+}
+
+.btns:hover {
+    background-color: #234609;
+}
