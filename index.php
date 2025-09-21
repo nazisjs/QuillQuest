@@ -13,7 +13,7 @@
 <header>
     <nav>
         <div class="navbar">
-        <a href="mainpage2.php"><img class="logo" src="pics/logogo.svg" alt="Logo"></a>
+        <a href="index.php"><img class="logo" src="pics/logogo.svg" alt="Logo"></a>
         <ul><li><a class="love">| A book world</a></li></ul>
         <i class="fa fa-bars"></i>
 </div>

@@ -39,7 +39,7 @@ $conn->close();
 </head>
 <header>
     <nav>
-        <a href="mainpage2.php"><img class="logo" src="image/logogo.svg" alt="Logo"></a>
+        <a href="index.php"><img class="logo" src="image/logogo.svg" alt="Logo"></a>
         <ul><li><a class="love" href="#">| A book world</a></li></ul>
         <ul class="nav-links">
             <li><a href="execution.php">Orders</a></li>
