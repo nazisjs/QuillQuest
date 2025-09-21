@@ -2,7 +2,7 @@
 
 <p id="description">A platform where readers and writers connect through imagination. Discover captivating books track your reading adventures and share your own creations. With QuillQuest every page is a new step in your literary journey. ⭐</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀Desktop Version Demo</h2>
 
 [Soon](Soon)
 
